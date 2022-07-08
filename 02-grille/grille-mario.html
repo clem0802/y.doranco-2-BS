@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- chargement en ligne de CSS Bootstrap, more slowly -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Grille - Bootstrap - (Numa)</title>
+
+        <style>
+            .rouge{ background: red; height: 50px; }
+            .bleu{ background: blue; height: 50px; }
+            .noir{ background: black; height: 50px; }
+            .jaune{ background: yellow; height: 50px; }
+            .marron{ background: rgb(117, 41, 41); height: 50px; }
+        </style>
+    </head>
+
+    <body>
+        
+
+
+        <!-- ************************************************* -->
+        <!-- ajouter "md" à tous les "offset" et "col" => "offset-md-2" etc etc -->
+        <h2>EXO - MARIO</h2>
+        <div class="my-4 border border-dark border-3 container-fluid">
+            <!-- row1 -->
+            <div class="row border border-dark border-1">
+                <div class="col-5 offset-3 rouge"></div>
+            </div>
+
+            <!-- row2 -->
+            <div class="row border border-dark border-1">
+                <div class="col-9 offset-2 rouge"></div>
+            </div>
+
+            <!-- row3 -->
+            <div class="row border border-dark border-1">
+                <div class="col-3 offset-2 marron"></div>
+                <div class="col-2 jaune"></div>
+                <div class="col-1 noir"></div>
+                <div class="col-1 jaune"></div>
+            </div>
+
+            <!-- row4 -->
+            <div class="row border border-dark border-1">
+                <div class="rouge col-1 offset-1 marron"></div>
+                <div class="rouge col-1 jaune"></div>
+                <div class="rouge col-1 marron"></div>
+                <div class="rouge col-3 jaune"></div>
+                <div class="rouge col-1 noir"></div>
+                <div class="rouge col-3 jaune"></div>
+            </div>
+
+            <!-- row5 nez -->
+            <div class="row border border-dark border-1">
+                <div class="rouge col-1 offset-1 marron"></div>
+                <div class="rouge col-1 jaune"></div>
+                <div class="rouge col-2 marron"></div>
+                <div class="rouge col-3 jaune"></div>
+                <div class="rouge col-1 noir"></div>
+                <div class="rouge col-3 jaune"></div>
+            </div>
+
+            <!-- row6 moustache noire -->
+            <div class="row border border-dark border-1">
+                <div class="rouge col-1 offset-2 marron"></div>
+                <div class="rouge col-4 jaune"></div>
+                <div class="rouge col-4 noir"></div>
+            </div>
+
+            <!-- row7 neck -->
+            <div class="row border border-dark border-1">
+                <div class="rouge col-6 offset-3 jaune"></div>
+            </div>
+
+            <!-- row8 épaules (salopette start) -->
+            <div class="row border border-dark border-1">
+                <div class="rouge col-2 offset-2 rouge"></div>
+                <div class="rouge col-1 bleu"></div>
+                <div class="rouge col-2 rouge"></div>
+                <div class="rouge col-1 bleu"></div>
+                <div class="rouge col-2 rouge"></div>
+            </div>
+
+            <!-- row9 épaules (salopette middle) -->
+            <div class="row border border-dark border-1">
+                <div class="rouge col-3 offset-1 rouge"></div>
+                <div class="rouge col-1 bleu"></div>
+                <div class="rouge col-2 rouge"></div>
+                <div class="rouge col-1 bleu"></div>
+                <div class="rouge col-3 rouge"></div>
+            </div>
+
+            <!-- row10 épaules (salopette bottom) -->
+            <div class="row border border-dark border-1">
+                <div class="rouge col-4"></div>
+                <div class="bleu col-4"></div>
+                <div class="rouge col-4"></div>
+            </div>
+
+            <!-- row11 arms top -->
+            <div class="row border border-dark border-1">
+                <div class="jaune col-2"></div>
+                <div class="rouge col-1"></div>
+                <div class="bleu col-1"></div>
+                <div class="jaune col-1"></div>
+                <div class="bleu col-2"></div>
+                <div class="jaune col-1"></div>
+                <div class="bleu col-1"></div>
+                <div class="rouge col-1"></div>
+                <div class="jaune col-2"></div>
+            </div>
+
+            <!-- row12 arms middle -->
+            <div class="row border border-dark border-1">
+                <div class="jaune col-3"></div>
+                <div class="bleu col-6"></div>
+                <div class="jaune col-3"></div>
+            </div>
+
+            <!-- row13 arms bottom -->
+            <div class="row border border-dark border-1">
+                <div class="jaune col-2"></div>
+                <div class="bleu col-8"></div>
+                <div class="jaune col-2"></div>
+            </div>
+
+            <!-- row14 legs up -->
+            <div class="row border border-dark border-1">
+                <div class="bleu offset-2 col-3"></div>
+                <div class="bleu offset-2 col-3"></div>
+            </div>
+
+            <!-- row14 legs middle -->
+            <div class="row border border-dark border-1">
+                <div class="marron offset-1 col-3"></div>
+                <div class="marron offset-4 col-3"></div>
+            </div>
+
+            <!-- row15 legs bottom -->
+            <div class="row border border-dark border-1">
+                <div class="marron col-4"></div>
+                <div class="marron offset-4 col-4"></div>
+            </div>
+        </div>
+        <hr>
+        <br><br>
+
+
+        <!-- ************************************************* -->
+        
+
+        <br><br><br><br><br><br>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
