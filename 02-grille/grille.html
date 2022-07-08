@@ -147,139 +147,20 @@
 
 
         <!-- ************************************************* -->
-        <!-- ajouter "md" à tous les "offset" et "col" => "offset-md-2" etc etc -->
-        <h2>EXO - MARIO</h2>
-        <div class="my-4 border border-dark border-3 container-fluid">
-            <!-- row1 -->
-            <div class="row">
-                <div class="col-5 offset-3 rouge"></div>
-            </div>
-
-            <!-- row2 -->
-            <div class="row">
-                <div class="col-9 offset-2 rouge"></div>
-            </div>
-
-            <!-- row3 -->
-            <div class="row">
-                <div class="col-3 offset-2 marron"></div>
-                <div class="col-2 jaune"></div>
-                <div class="col-1 noir"></div>
-                <div class="col-1 jaune"></div>
-            </div>
-
-            <!-- row4 -->
-            <div class="row">
-                <div class="rouge col-1 offset-1 marron"></div>
-                <div class="rouge col-1 jaune"></div>
-                <div class="rouge col-1 marron"></div>
-                <div class="rouge col-3 jaune"></div>
-                <div class="rouge col-1 noir"></div>
-                <div class="rouge col-3 jaune"></div>
-            </div>
-
-            <!-- row5 nez -->
-            <div class="row">
-                <div class="rouge col-1 offset-1 marron"></div>
-                <div class="rouge col-1 jaune"></div>
-                <div class="rouge col-2 marron"></div>
-                <div class="rouge col-3 jaune"></div>
-                <div class="rouge col-1 noir"></div>
-                <div class="rouge col-3 jaune"></div>
-            </div>
-
-            <!-- row6 moustache noire -->
-            <div class="row">
-                <div class="rouge col-1 offset-2 marron"></div>
-                <div class="rouge col-4 jaune"></div>
-                <div class="rouge col-4 noir"></div>
-            </div>
-
-            <!-- row7 neck -->
-            <div class="row">
-                <div class="rouge col-6 offset-3 jaune"></div>
-            </div>
-
-            <!-- row8 épaules (salopette start) -->
-            <div class="row">
-                <div class="rouge col-2 offset-2 rouge"></div>
-                <div class="rouge col-1 bleu"></div>
-                <div class="rouge col-2 rouge"></div>
-                <div class="rouge col-1 bleu"></div>
-                <div class="rouge col-2 rouge"></div>
-            </div>
-
-            <!-- row9 épaules (salopette middle) -->
-            <div class="row">
-                <div class="rouge col-3 offset-1 rouge"></div>
-                <div class="rouge col-1 bleu"></div>
-                <div class="rouge col-2 rouge"></div>
-                <div class="rouge col-1 bleu"></div>
-                <div class="rouge col-3 rouge"></div>
-            </div>
-
-            <!-- row10 épaules (salopette bottom) -->
-            <div class="row">
-                <div class="rouge col-4"></div>
-                <div class="bleu col-4"></div>
-                <div class="rouge col-4"></div>
-            </div>
-
-            <!-- row11 arms top -->
-            <div class="row">
-                <div class="jaune col-2"></div>
-                <div class="rouge col-1"></div>
-                <div class="bleu col-1"></div>
-                <div class="jaune col-1"></div>
-                <div class="bleu col-2"></div>
-                <div class="jaune col-1"></div>
-                <div class="bleu col-1"></div>
-                <div class="rouge col-1"></div>
-                <div class="jaune col-2"></div>
-            </div>
-
-            <!-- row12 arms middle -->
-            <div class="row">
-                <div class="jaune col-3"></div>
-                <div class="bleu col-6"></div>
-                <div class="jaune col-3"></div>
-            </div>
-
-            <!-- row13 arms bottom -->
-            <div class="row">
-                <div class="jaune col-2"></div>
-                <div class="bleu col-8"></div>
-                <div class="jaune col-2"></div>
-            </div>
-
-            <!-- row14 legs up -->
-            <div class="row">
-                <div class="bleu offset-2 col-3"></div>
-                <div class="bleu offset-2 col-3"></div>
-            </div>
-
-            <!-- row14 legs middle -->
-            <div class="row">
-                <div class="marron offset-1 col-3"></div>
-                <div class="marron offset-4 col-3"></div>
-            </div>
-
-            <!-- row15 legs bottom -->
-            <div class="row">
-                <div class="marron col-4"></div>
-                <div class="marron offset-4 col-4"></div>
-            </div>
-        </div>
+        <h2>Disiplay - Flex</h2>
+        <!-- start from 40:00 -->
         <hr>
-        <br><br>
 
 
         <!-- ************************************************* -->
-        <h2>Mise en Application</h2>
+        <!-- mettre en place dans "ASIDE" deux colonnes imbriquées (colonne dans colonne) -->
+        <!-- la 1ère colonne taille de 6 uniquement en xl, bg jaune  -->
+        <!-- la 2ème colonne taille de 6 uniquement en xl, bg rouge -->
+        <h2>Mise en Application + ASIDE</h2>
         <div class="container-fluid border border-danger border-3">
             <header class="row">
-                <div class="col-4 bg-primary text-center text-md-start">LOGO</div>
-                <div class="col-8 bg-info text-center text-md-end">BANNIERE</div>
+                <div class="col-md-4 bg-primary text-center text-md-start">LOGO</div>
+                <div class="col-md-8 bg-info text-center text-md-end">BANNIÈRE</div>
             </header>
             <nav class="row">
                 <div class="col-sm-2 bg-danger">1</div>
@@ -296,9 +177,14 @@
             <main class="row">
                 <aside class="col-md-4 bg-secondary">
                     COLONNE
+                    <div class="row">
+                        <div class="col-xl-6 bg-warning">aside-imbriquée-1</div>
+                        <div class="col-xl-6 bg-danger">aside-imbriquée-2</div>
+                    </div>
                 </aside>
-                <article class="col-md-8 bg-primary">
-                    CONTENU
+                <article class="col-md-7 offset-md-1 bg-primary">
+                    <header>Introduction de mon article, sommaire</header>
+                    <footer>Footer de mon article</footer>
                 </article>
             </main>
         </div>
