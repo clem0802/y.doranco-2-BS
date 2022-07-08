@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utilities</title>
+        <!-- Chargement de bootstrap css -->
+        <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        
+        <!-- sur le h1 placez une marge exterieure de 4 en haut et en bas et un padding de 2 des 4 cotés -->
+        <h1 class="mb-4 p-5 bg-primary bg-gradient bg-opacity-75 text-white">Utilities</h1>
+
+        <h2 class="p-2 my-4 mx-2 bg-info">marges (spacing)</h2>
+        <!-- https://getbootstrap.com/docs/5.2/utilities/spacing/ -->
+
+        <div class="my-0 mx-auto bg-gradient" style="background-color: purple; width: 50%;">Contenu</div>
+
+        <h2 class="p-2 my-4 mx-2 bg-info">Couleurs (background et textes)</h2>
+        <!-- https://getbootstrap.com/docs/5.2/utilities/background/ -->
+        <!-- https://getbootstrap.com/docs/5.2/utilities/colors/ -->
+
+
+        <!-- Creer une div qui possedera une couleur de fond verte, en dégradé et à 25% d'opacité, à l'intérieur de texte sera noir à 50% d'opacité.
+        appliquez une marge exterieure des 4 cotés de valeur 3 et une marge interieure à gauche et à droite de valeur 2
+        -->
+        <div class="bg-success bg-gradient bg-opacity-25 text-dark text-opacity-50 m-3 px-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quam libero, eveniet sed officiis vel, accusamus placeat autem ad voluptatum doloremque cum voluptates, labore officia id enim culpa itaque architecto.
+        </div>
+
+
+        <h2 class="p-2 my-4 mx-2 bg-info">Bordures</h2>
+        <!-- https://getbootstrap.com/docs/5.2/utilities/borders/ -->
+
+
+        <!-- mettre en place une border, rouge, d'une taille de 3, ajouter dessus un border-radius top d'une intensité de 4 -->
+
+        <div class="m-4 border border-danger border-3 rounded-top">    Border    </div>
+
+        <!-- je centre le txte par defaut, puis à partir large, je place le texte à gauche -->
+        <h2 class="p-2 my-4 mx-2 bg-info text-center text-lg-start text-uppercase">Textes éàù</h2>
+        <!-- https://getbootstrap.com/docs/5.2/utilities/text/ -->
+        <span class="fs-4 fw-bold fst-italic">Taille de titre de niveau 4 en gras et italique</span>
+
+        
+        <!-- chargement du javascript bootstrap -->
+        <script src="../bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+<!-- 
+body {
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    align-content: flex-start;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    flex-flow: row wrap;
+}
+
+
+FLEXBOX FROGGY #24
+exo Numa mentioned
+#pond {
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: column-reverse wrap-reverse;
+    flex-direction: column-reverse; */
+} 
+-->
+
+
+<!-- ********************************************** -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>TEST / Cours de Numa</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            div{
+                width: 100px;
+                background-color: orange;
+                padding: 10px;
+                border: 10px solid red;
+            }
+            h2 {
+                /* priorité CSS */
+                color: blue !important;
+            }
+            h2 {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>Contenu</div>
+        <h2>tester importance</h2>
+        <script src="script.js"></script>
+    </body>
+</html> -->

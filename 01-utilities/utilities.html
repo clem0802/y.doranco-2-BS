@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utilities - Bootstrap - (Numa)</title>
+
+        <!-- chargement local de CSS Bootstrap, faster -->
+        <!-- but files deleted cause "LARGE FILES", pb for pushing back to GitHub -->
+        <!-- <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- SPACING LIEN:  https://getbootstrap.com/docs/5.2/utilities/spacing/ -->
+        <!-- placer une marge extérieure de 4 en haut et en bas,  -->
+        <h1 class="mb-4 p-5 bg-primary bg-gradient bg-opacity-50 text-white">Utilities</h1>
+        <h2 class="p-2 my-4 mx-2 bg-info text-danger">marges (spacing)</h2>
+        <hr>
+
+
+        <!-- pour supprimer margin-bottom -->
+        <!-- texte est "GRISÉ" -->
+        <h3 class="mb-0 bg-success text-muted">test (h3)</h3>
+        <div style="background-color: purple; width: 50%; margin: 0 auto;">Contenu (DIV)</div>
+        <div class="my-0 mx-auto bg-warning bg-gradient">Contenu (DIV)</div>
+        <hr>
+
+
+        <!-- https://getbootstrap.com/docs/5.2/utilities/background/ -->
+        <!-- https://getbootstrap.com/docs/5.2/utilities/colors/ -->
+        <!-- https://getbootstrap.com/docs/5.2/utilities/background/#background/#opacity -->
+        <h2 class="p-2 my-4 mx-2 bg-info bg-gradient">Couleurs (backgrounds/textes) (h2)</h2>
+
+        <!-- EXO -->
+        <!-- Creer une div qui possedera une couleur de fond verte, en dégradé et à 25% d'opacité, à l'intérieur de texte sera noir à 50% d'opacité, appliquez une marge exterieure des 4 cotés de valeur 3 et une marge interieure à gauche et à droite de valeur 2 -->
+        <div class="bg-success bg-gradient bg-opacity-25 text-dark text-opacity-50 m-3 px-2">
+            <p>EXO EXO - Texte bg-opacity-25</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, nesciunt?</p>
+        </div>
+        <hr>
+
+
+        <div class="border border-4 border-danger rounded-2 container my-5">
+            <div class="row">
+                <div class="col-md-4 bg-success">colonne 1, verte</div>
+                <div class="col-md-8 bg-info">colonne 2, bleue</div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- https://getbootstrap.com/docs/5.2/utilities/borders/ -->
+        <!-- mettre en place une border, rouge, d'une taille de 3, ajouter dessus un border-radius top d'une intensité de 4 -->
+        <h2 class="p-2 my-4 mx-2 bg-info bg-gradient">Borders (h2)</h2>
+        <div class="m-4 border border-danger border-5 rounded-top">Border (DIV)</div>
+        <hr>
+
+
+        <!-- TEXT -->
+        <!-- regarder NOWRAP / lowercase,UPPERCASE,CapiTaliZe / fs=font-size / fst=font-style / fw=font-weight-->
+        <!-- https://getbootstrap.com/docs/5.2/utilities/text/ -->
+        <h2 class="p-2 my-4 mx-2 bg-info text-end text-sm-center text-md-start text-lg-end text-xl-center">Text (h2)</h2>
+        <h2 class="p-2 my-4 mx-2 bg-info text-center text-lg-start">Text (h2)</h2>
+        <div class="m-4 border border-danger border-5 rounded-top text-uppercase">Text éàùè (DIV)</div>
+        <h2 class="p-2 my-4 mx-2 bg-info text-center text-lg-start text-uppercase">Textes éàù (h2)</h2>
+        <span class="fs-4 fw-bold fst-italic bg-success bg-200">Taille de titre de niveau 4 en gras et italique</span>
+        <hr>
+
+
+
+
+
+
+
+
+        <!-- BREAKPOINT -->
+        <!-- https://getbootstrap.com/docs/5.2/layout/breakpoints/ -->
+        <!--
+        // X-Small devices (portrait phones, less than 576px)
+        // No media query for `xs` since this is the default in Bootstrap
+
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) { ... }
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) { ... }
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) { ... }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) { ... }
+
+        // XX-Large devices (larger desktops, 1400px and up)
+        @media (min-width: 1400px) { ... }
+        -->
+
+
+        <br><br><br><br><br><br>
+
+
+
+        <!-- 
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div> 
+        -->
+        
+
+        <!-- SÉMANTIQUE HTML (from Numa) -->
+        <!-- https://fr.semrush.com/blog/balises-structurelles-html-semantique/?kw=&cmp=FR_SRCH_DSA_Blog_Core_BU_FR&label=dsa_pagefeed&Network=g&Device=c&utm_content=487607529045&kwid=dsa-1100351996564&cmpid=11849486850&agpid=113156859297&BU=Core&extid=23618958962&adpos=&gclid=CjwKCAjwiJqWBhBdEiwAtESPaOMlxdZUjdikFXtm465Xvc9ffhfaNK1LY0feRu--lk7aOniHQb7CdxoCNVwQAvD_BwE -->
+
+
+        <!-- chargement local JavaScript Bootstrap, deleted cause "LARGE FILES DETECTED" for GitHub -->
+        <!-- <script src="../bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
