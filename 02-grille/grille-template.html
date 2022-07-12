@@ -29,6 +29,7 @@
         <div class="border border-danger border-3 container-fluid fw-bold">
             conteneur fluide, RESPONSIVE
         </div>
+        <br>
         <hr>
 
         <!-- créer un conteneur adaptatif (une taille fixe qui change selon la largeur du navigateur)-->
@@ -37,6 +38,7 @@
         <div class="border border-danger border-3 container">
             conteneur adaptatif, RESPONSIVE
         </div>
+        <br>
         <hr>
 
 
@@ -44,6 +46,7 @@
         <div class="border border-danger border-lg">
             conteneur, fluide puis adaptatif
         </div>
+        <br>
         <hr>
 
 
@@ -51,6 +54,7 @@
         <div class="border border-danger border-3" style="width: 800px">
             conteneur, NON-RESPONSIVE
         </div>
+        <br>
         <hr>
 
         <!-- ************************************************* -->
@@ -63,6 +67,7 @@
                 <div class="col bg-success">colonne-3</div>
             </div>
         </div>
+        <br>
         <hr>
 
         <!-- ************************************************* -->
@@ -81,6 +86,7 @@
                 <div class="col-6 bg-info">Colonne 8</div>
             </div>
         </div>
+        <br>
         <hr>
 
 
@@ -93,6 +99,7 @@
                 <div class="col-5 bg-success">Colonne avec taille de 5</div>
             </div>
         </div>
+        <br>
         <hr>
 
 
@@ -109,6 +116,7 @@
                 <div class="col bg-warning">Colonne simple</div>
             </div>
         </div>
+        <br>
         <hr>
     
 
@@ -126,6 +134,7 @@
                 <div class="col-sm-9 col-md-7 col-lg-6 col-xl-4 col-xxl-12 bg-info">Colonne</div>
             </div>
         </div>
+        <br>
         <hr>
 
 
@@ -143,12 +152,83 @@
                 <div class="col-sm-7 offset-sm-2 bg-warning">Colonne (ajouter "sm" => PAS DE "overflow")</div>
             </div>
         </div>
+        <br>
         <hr>
 
 
         <!-- ************************************************* -->
-        <h2>Disiplay - Flex</h2>
-        <!-- start from 40:00 -->
+        <h2 class="fw-bold">Disiplay - Flex</h2>
+        <p>d-flex / d-grid / d-inline-block</p>
+        <p>(hidden only on xs) d-none d-sm-block / (hidden only on sm) d-sm-none d-md-block</p>
+        <p>flex-row / flex-column / flex-sm-row-reverse / flex-lg-column</p>
+        <p>justify-content-start / justify-content-center / justify-content-end / justify-content-between</p>
+        <p>align-items-start / align-items-center / align-items-end / align-items-baseline / align-items-stretch</p>
+        <hr><br>
+
+        <h2>Display - Flex (justify-content-around)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-around" style="height: 200px">
+                <div class="col-sm-5 bg-danger fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-warning fw-bold text-center">(2ème colonne)</div>
+            </div>
+        </div>
+
+        <h2>Display - Flex (justify-content-between)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-between" style="height: 200px">
+                <div class="col-sm-5 bg-success fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-info fw-bold text-center">(2ème colonne)</div>
+            </div>
+        </div>
+
+        <h2>Display - Flex (justify-content-between / align-items-center)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-between align-items-center" style="height: 200px">
+                <div class="col-sm-5 bg-success fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-info fw-bold text-center">(2ème colonne)</div>
+            </div>
+        </div>
+
+        <h2>Display - Flex (justify-content-evenly / align-items-center)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-evenly align-items-center" style="height: 200px">
+                <div class="col-sm-5 bg-success fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-info fw-bold text-center">(2ème colonne)</div>
+            </div>
+        </div>
+
+        <h2>Display - Flex (between / align-items-start)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-between align-items-start" style="height: 200px">
+                <div class="col-sm-5 bg-success fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-info fw-bold text-center">(2ème colonne)</div>
+            </div>
+        </div>
+
+        <h2 >Display - Flex (between / align-items-end)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-between align-items-end" style="height: 200px">
+                <div class="col-sm-5 bg-success fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-info fw-bold text-center">(2ème colonne)</div>
+            </div>
+        </div>
+
+        <h2 class="text-danger fw-bold">Display - Flex (evenly / vertical change selon breakpoint)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-evenly align-items-start align-items-md-center align-items-lg-end" style="height: 200px">
+                <div class="col-sm-5 bg-success fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-info fw-bold text-center">(2ème colonne)</div>
+            </div>
+        </div>
+
+        <h2 class="text-primary fw-bold">Display - Flex (2ème colonne => ALIGN-SELF)</h2>
+        <div class="my-4 border border-danger border-3 container">
+            <div class="row justify-content-evenly align-items-start align-items-md-center align-items-lg-end" style="height: 200px">
+                <div class="col-sm-5 bg-success fw-bold text-center">(1ère colonne)</div>
+                <div class="col-sm-5 bg-info fw-bold text-center align-self-lg-center">(2ème colonne)</div>
+            </div>
+        </div>
+        <br>
         <hr>
 
 
@@ -156,8 +236,8 @@
         <!-- mettre en place dans "ASIDE" deux colonnes imbriquées (colonne dans colonne) -->
         <!-- la 1ère colonne taille de 6 uniquement en xl, bg jaune  -->
         <!-- la 2ème colonne taille de 6 uniquement en xl, bg rouge -->
-        <h2>Mise en Application + ASIDE</h2>
-        <div class="container-fluid border border-danger border-3">
+        <h2 class="text-success">Mise en Application + ASIDE (attention ORDER)</h2>
+        <div class="container-fluid border border-danger border-3 text-center fw-bold">
             <header class="row">
                 <div class="col-md-4 bg-primary text-center text-md-start">LOGO</div>
                 <div class="col-md-8 bg-info text-center text-md-end">BANNIÈRE</div>
@@ -170,36 +250,37 @@
                 <div class="col-sm-2 bg-danger">5</div>
                 <div class="col-sm-2 bg-warning">6</div>
             </nav>
-        </div>
+        </div><br>
 
         <!-- non fluid mais adaptatif -->
-        <div class="container border border-danger border-3">
+        <div class="container border border-danger border-3 text-center fw-bold">
             <main class="row">
-                <aside class="col-md-4 bg-secondary">
-                    COLONNE
+                <aside class="order-2 order-md-1 col-md-4 bg-secondary">
+                    COLONNE-ASIDE
                     <div class="row">
                         <div class="col-xl-6 bg-warning">aside-imbriquée-1</div>
                         <div class="col-xl-6 bg-danger">aside-imbriquée-2</div>
                     </div>
                 </aside>
-                <article class="col-md-7 offset-md-1 bg-primary">
+                <article class="order-1 order-md-2 col-md-7 offset-md-1 bg-primary">
                     <header>Introduction de mon article, sommaire</header>
                     <footer>Footer de mon article</footer>
                 </article>
             </main>
-        </div>
+        </div><br>
 
-        <footer class="container-fluid">
+        <footer class="container-fluid text-center fw-bold">
             <div class="row">
                 <div class="col-lg-6 bg-danger">footer A</div>
                 <div class="col-lg-6 bg-warning">footer B</div>
             </div>
             <div class="row">
-                <div class="col-xl-4 bg-success">FOOTER 1</div>
-                <div class="col-xl-4 bg-info">FOOTER 2</div>
-                <div class="col-xl-4 bg-success">FOOTER 3</div>
+                <div class="col-xl-4 bg-success">FOOTER (1)</div>
+                <div class="col-xl-4 bg-info">FOOTER (2)</div>
+                <div class="col-xl-4 bg-success">FOOTER (3)</div>
             </div>
         </footer>
+        <br><br>
         <hr>
 
 

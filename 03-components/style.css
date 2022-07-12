@@ -1,0 +1,34 @@
+/* je charge mon css perso en second, pour qu'il puisse appliquer les modifs que je souhaite à bootstrap */
+/* je n'édite jamais directement le fichier bootstrap */
+
+body {
+    /* juste pour ajouter un scroll */
+    height: 1500px;
+}
+
+.dropdown .btn {
+    /* ça cible ONLY le btn de div "dropdown" */
+    /* je force la hauteur de body */
+    border-radius: 0px;
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+}
+
+.btn-danger:hover {
+    border-radius: 6px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------ */
+/* check out "ALL COLORS" */
+/* https://getbootstrap.com/docs/5.2/customize/color/ */
+
+
+/* ------------------------------------ */
+/* SASS */
+/* https://getbootstrap.com/docs/5.2/customize/sass/ */
