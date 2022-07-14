@@ -1,5 +1,31 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    background-color: #7f8c8d;
+    border: 3px solid white;
+    width: 500px;
+    height: 500px;
+    color: white;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    
+    padding: 20px;
+}
+
+/* 1st p */
+.marginLeft {
+    margin-left: 100px;
+    border: 3px solid red;
+}
+
+/* 2nd p */
+.marginTop {
+    margin-top: 100px;
+    border: 3px solid blue;
 }
