@@ -1,5 +1,24 @@
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+ul li {
+    text-align: center;
+
+    /* --------------------------------------- */
+    /* below will make the 4 links to display in ONE HORIZONTAL LINE */
+    /* comment out property below to see difference */
+    display: inline-block;
 }
+
+a {
+    border: 2px solid green;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+
+    /* --------------------------------------- */
+    /* this will make the 4 links to display in ONE VERTICAL BLOCK */
+    /* this will also allow MARGIN-TOP & MARGIN-BOTTOM */
+    /* comment out property below to see difference */
+    display: block;
+}
+
