@@ -3,3 +3,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h2 {
+    margin: 100px auto;
+    text-align: center;
+}
+
+div {
+    width: 400px;
+    height: 200px;
+    background-color: #34495e;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+p {
+    color: red;
+}
+
+/* --------------------------- */
+/* 1er DIV */
+div:nth-of-type(1) {
+    overflow: visible;
+}
+
+/* --------------------------- */
+/* 2ème DIV */
+div:nth-of-type(2) {
+    overflow: hidden;
+}
+
+/* --------------------------- */
+/* 3ème DIV */
+div:nth-of-type(3) {
+    overflow: scroll;
+}
+
+/* --------------------------- */
+/* 3ème DIV */
+div:nth-of-type(4) {
+    overflow: auto;
+}
