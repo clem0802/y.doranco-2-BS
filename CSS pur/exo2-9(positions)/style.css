@@ -1,5 +1,60 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
+/* initial colors of Doranco e-learning lessons: #34495e #7f8c8d #27ae60 */
+
+body {
+    height: 2200px;
+}
+
+#initial,
+#relative,
+#absolute,
+#fixed,
+#sticky {
+    width: 210px;
+    height: 210px;
+    border: 1px solid black;
+    color: white;
+    font-size: 40px;
+}
+
+
+/* --------------(1) INITIAL-------------- */
+#initial {
+    color: black;
+}
+
+/* --------------(2) ABSOLUTE => se position par rapport à tout l'écran-------------- */
+#absolute {
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    background-color: pink;
+}
+
+/* --------------(3) FIXED => position fixed when scrolling-------------- */
+#fixed {
+    position: fixed;
+    top: 200px;
+    left: 900px;
+    background-color: dodgerblue;
+}
+
+/* --------------(4) RELATIVE => se positionne par rapport à sa position de départ-------------- */
+#relative {
+    position: relative;
+    top: 200px;
+    left: 500px;
+    background-color: #34495e;
+}
+
+/* --------------(5) STICKY => when scrolling to top 45px, it will STUCK there-------------- */
+#sticky {
+    position: sticky;
+    top: 45px;
+    background-color: #27ae60;
+}
+
