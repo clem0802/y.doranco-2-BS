@@ -1,5 +1,90 @@
-* {
+/* * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
+} */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------------------------- */
+/* en PIXELS */
+div {
+    background-color: red;
+    color: white;
+    margin: 20px;
+}
+p {
+    font-size: 40px;
+}
+#width-pixels {
+    width: 1000px;
+}
+
+/* ------------------------------- */
+/* en POURCENTAGE % => % s'exprime tjrs par rapport au parent */
+.dynamique-parent {
+    border: 6px solid green;
+}
+.dynamique-enfant {
+    border: 2px solid dodgerblue;
+}
+.parent-width-percentage {
+    width: 60%;
+}
+#enfant-width_percentage {
+    width: 50%;
+}
+
+
+/* ------------------------------- */
+/* VIEW-WIDTH: 60vw => 60% de largeur de la page */
+.view-parent {
+    border: 6px solid green;
+}
+.view-enfant {
+    border: 2px solid dodgerblue;
+}
+.parent-vw {
+    width: 60vw;
+}
+#enfant-vw {
+    /* width: 60vw n'est plus 60% par rapport au parent mais par rapport à la PAGE */
+    width: 60vw; 
+}
+
+
+/* ------------------------------- */
+/* HEIGHT in PERCENTAGE */
+.height-parent {
+    border: 6px solid green;
+}
+.height-enfant {
+    border: 2px solid dodgerblue;
+}
+.parent-height-percentage {
+    height: 30%;
+}
+#enfant-height-percentage {
+    height: 20%;
+}
+
+
+/* ------------------------------- */
+/* VIEW-HEIGHT */
+.vh-parent {
+    border: 6px solid green;
+}
+.vh-enfant {
+    border: 2px solid dodgerblue;
+}
+.parent-view-height {
+    /* view-height: 5vh => 5% par rapport à la page */
+    height: 5vh;
+}
+#enfant-view-height {
+    /* view-height: 10vh => 10% par rapport à la page, plus grand que son parent */
+    height: 10vh;
 }

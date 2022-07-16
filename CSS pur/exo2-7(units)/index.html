@@ -4,12 +4,78 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>XX</title>
-        <meta name="description" content="Here I work on XX, Doranco's CSS exercise">
+        <link rel="stylesheet" href="style.css" media="screen">
+        <link rel="stylesheet" href="print.css" media="print">
+        <title>exo - UNITS (unités de mesure)</title>
+        <meta name="description" content="Here I work on UNITS, Doranco's CSS exercise">
     </head>
 
+    <!-- "Dynamique": par rapport au parent -->
+    <!-- "RWD": par rapport aux différents devices -->
+
+
     <body>
+
+        <!-- ***************************************** -->
+        <!-- "WIDTH" -->
+
+        <!-- PIXELS -->
+        <!-- précis, mais NON RESPONSIVE -->
+        <h2>(1) width - PIXELS</h2>
+        <div id="width-pixels">
+            <p>1000px</p>
+        </div>
+        <br><br><br><hr>
+
+
+        <!-- POURCENTAGE % -->
+        <!-- NON RESPONSIVE mais DYNAMIQUE -->
+        <h2>(2) width - POURCENTAGE %</h2>
+        <div class="dynamique-parent parent-width-percentage">
+            parent: 60%
+            <div class="dynamique-enfant" id="enfant-width-percentage">
+                <p>enfant: 50%</p>
+            </div>
+        </div>
+        <br><br><br><hr>
+
+
+        <!-- VIEW WIDTH -->
+        <h2>(3) view - WIDTH</h2>
+        <div class="view-parent parent-vw">
+            parent: 60vw
+            <div class="view-enfant" id="enfant-vw">
+                <p>enfant: 60vw</p>
+            </div>
+        </div>
+        <br><br><br><hr>
+
+
+        <!-- ***************************************** -->
+        <!-- "HEIGHT" -->
+
+        <!-- HEIGHT PERCENTAGE % -->
+        <h2>(4) HEIGHT in PERCENTAGE</h2>
+        <div class="height-parent parent-height-percentage">
+            parent-HEIGHT: 30% en hauteur du body
+            <div class="height-enfant" id="enfant-height-percentage">
+                <p>enfant-HEIGHT: 20%</p>
+            </div>
+        </div>
+        <br><br><br><hr>
+
+
+        <!-- VIEW HEIGHT -->
+        <h2>(5) view - HEIGHT</h2>
+        <div class="vh-parent parent-view-height">
+            parent: 5vh
+            <div class="vh-enfant" id="enfant-view-height">
+                <p>enfant: 10vh</p>
+            </div>
+        </div>
+        <br><br><br><hr>
         
+
+        <br><br><br><br><br><hr>
     </body>
 </html>
