@@ -1,5 +1,61 @@
-* {
+/* * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
+} */
+
+/* ------------------------------------- */
+/* PSEUDO-CLASS */
+div {
+    width: 700px;
+    margin: 0 auto;
+}
+.pseudo:hover {
+    color: red;
+    cursor: pointer;
+}
+input:focus {
+    /* below, pour enlever le outline */
+    outline: none !important;
+
+    border: 2px solid fuchsia;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* ------------------------------------- */
+/* PSEUDO-ELEMENT */
+.pseudo-elem::first-line {
+    color: blue;
+    text-transform: uppercase;
+}
+
+
+/* ------------------------------------- */
+/* ::BEFORE => crée un pseuldo-élément qui sera le 1er enfant de l'élément ciblé */
+.pseudo-elem::before {
+    /* content: ""; */
+    content: "❤";
+    border: 2px solid green;
+    position: relative;
+    right: 5px;
+}
+
+/* ------------------------------------- */
+/* ::AFTER */
+.pseudo-elem::after {
+    /* content: ""; */
+    content: "❤";
+    border: 2px solid red;
+    position: relative;
+    left: 5px;
+}
+
+
+/* ------------------------------------- */
+/* ::FIRST-LETTER */
+.pseudo-ELEM::first-letter {
+    font-size: 40px;
+    color: orange;
+    font-weight: bold;
 }
