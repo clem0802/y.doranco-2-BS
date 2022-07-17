@@ -1,0 +1,50 @@
+* {
+    margin:0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    background-color: #7f8c8d;
+}
+
+
+/* ----------------------------- */
+.d-flex {
+    display: flex;
+    margin: 20px;
+    background-color: #b9babb;
+    border: 1px solid tomato;
+    color: yellow;
+}
+.inner-elem {
+    border: 1px solid #c0392b;
+    height: 100px;
+    padding: 15px;
+    background-color: #34495e;
+}
+
+/* ----------------------------- */
+/* la propriété "flex" répartit l'espace du parent */
+.flex-wrap {
+    flex-wrap: wrap;
+    font-size: 50px;
+    width: 45%;
+}
+.order1 {
+    order: 1;
+}
+.order2 {
+    order: 2;
+}
+.order3 {
+    order: 3;
+}
+.order4 {
+    order: 4;
+}
+.order5 {
+    order: 5;
+}
+.order6 {
+    order: 6;
+}

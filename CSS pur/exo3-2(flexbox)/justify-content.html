@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="justify-content.css">
+        <title>exo - FLEXBOX - JustifyContent</title>
+        <meta name="description" content="Here I work on FLEXBOX - JustifyContent, Doranco's CSS exercise">
+    </head>
+
+
+    <!-- ************************************************* -->
+
+    <!-- BLOCK => starts on a new line -->
+    <!-- BLOCK => always takes up the FULL WIDTH available -->
+    <!-- BLOCK => has MARGIN-TOP & MARGIN-BOTTOM -->
+    <!-- address - article - aside - blockquote - canvas - dd - div - dl - dt
+         fieldset - figcaption - figure - footer - form - h1 h2 h3 h4 h5 h6 - header - hr
+         li main nav noscripot ol p pre section table tfoot ul  -->
+
+    <!-- INLINE => does not start on a new line -->
+    <!-- INLINE => takes up only necessary width -->
+    <!-- INLINE => don't have MARGIN-TOP & MARGIN-BOTTOM -->
+    <!-- a - abbr - acronym - b - bdo - big - br - button
+         cite - code - dfn - em - i - img - imput - kbd - label - map
+         object - output - q - samp - scripot - select - small - span
+         strong - sub - sup - textarea - time - tt - var -->
+
+    <!-- ************************************************* -->
+
+
+    <body>
+        <!-- Display Flex  -->
+        <!-- Flex Direction -->
+        <h2>Display Flex</h2>
+        <div class="d-flex">
+            <!-- div.inner-elem{Elem $}*4 -->
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+
+        
+        <!-- Justify Content -->
+        <h2>Justify-Content: Center</h2>
+        <!-- div.d-flex justify-content-center>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex justify-content-center">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>      
+
+
+        <h2>Justify-Content: Space-Between</h2>
+        <!-- div.d-flex justify-content-sp-between>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex justify-content-sp-between">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+
+
+        <h2>Justify-Content: Space-Around</h2>
+        <!-- div.d-flex justify-content-sp-around>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex justify-content-sp-around">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+
+
+        <h2>Justify-Content: Space-Evenly</h2>
+        <!-- div.d-flex justify-content-sp-evenly>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex justify-content-sp-evenly">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+
+
+        <h2>Justify-Content: Flex-End</h2>
+        <!-- div.d-flex justify-content-flex-end>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex justify-content-flex-end">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="align-items.css">
+        <title>exo - FLEXBOX - AlignItems</title>
+        <meta name="description" content="Here I work on FLEXBOX - AlignItems, Doranco's CSS exercise">
+    </head>
+
+
+    <!-- ************************************************* -->
+
+    <!-- BLOCK => starts on a new line -->
+    <!-- BLOCK => always takes up the FULL WIDTH available -->
+    <!-- BLOCK => has MARGIN-TOP & MARGIN-BOTTOM -->
+    <!-- address - article - aside - blockquote - canvas - dd - div - dl - dt
+         fieldset - figcaption - figure - footer - form - h1 h2 h3 h4 h5 h6 - header - hr
+         li main nav noscripot ol p pre section table tfoot ul  -->
+
+    <!-- INLINE => does not start on a new line -->
+    <!-- INLINE => takes up only necessary width -->
+    <!-- INLINE => don't have MARGIN-TOP & MARGIN-BOTTOM -->
+    <!-- a - abbr - acronym - b - bdo - big - br - button
+         cite - code - dfn - em - i - img - imput - kbd - label - map
+         object - output - q - samp - scripot - select - small - span
+         strong - sub - sup - textarea - time - tt - var -->
+
+    <!-- ************************************************* -->
+
+    <body>
+        <!-- Align Items -->
+        <h2>Align-Items: Flex-Start</h2>
+        <!-- div.d-flex align-items-flex-start>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex align-items-flex-start">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+
+
+        <h2>Align-Items: Center</h2>
+        <!-- div.d-flex align-items-center>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex align-items-center">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+        
+
+        <h2>Align-Items: Flex-End</h2>
+        <!-- div.d-flex align-items-flex-end>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex align-items-flex-end">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+
+    <!-- **************************************************  -->
+        <!-- Align Self -->
+        <h2>Align-Self: Flex-End:first-child</h2>
+        <!-- div.d-flex align-self align-self-flex-end>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex align-self align-self-flex-end">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+
+
+        <h2>Align-Self: Center:nth-child(3)</h2>
+        <!-- div.d-flex align-self align-self-center>div.inner-elem{Elem $}*4 -->
+        <div class="d-flex align-self align-self-center">
+            <div class="inner-elem">Elem 1</div>
+            <div class="inner-elem">Elem 2</div>
+            <div class="inner-elem">Elem 3</div>
+            <div class="inner-elem">Elem 4</div>
+        </div>
+        <br><br><hr><br>
+    </body>
+</html>

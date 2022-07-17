@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="grow-shrink-basis.css">
+        <title>exo - FLEX: grow-shrink-basis</title>
+        <meta name="description" content="Here I work on FLEX: grow-shrink-basis, Doranco's CSS exercise">
+    </head>
+
+    <!-- ************************************************* -->
+
+    <!-- BLOCK => starts on a new line -->
+    <!-- BLOCK => always takes up the FULL WIDTH available -->
+    <!-- BLOCK => has MARGIN-TOP & MARGIN-BOTTOM -->
+    <!-- address - article - aside - blockquote - canvas - dd - div - dl - dt
+         fieldset - figcaption - figure - footer - form - h1 h2 h3 h4 h5 h6 - header - hr
+         li main nav noscripot ol p pre section table tfoot ul  -->
+
+    <!-- INLINE => does not start on a new line -->
+    <!-- INLINE => takes up only necessary width -->
+    <!-- INLINE => don't have MARGIN-TOP & MARGIN-BOTTOM -->
+    <!-- a - abbr - acronym - b - bdo - big - br - button
+         cite - code - dfn - em - i - img - imput - kbd - label - map
+         object - output - q - samp - scripot - select - small - span
+         strong - sub - sup - textarea - time - tt - var -->
+
+    <!-- ************************************************* -->
+
+    <body>
+        <!-- Flex Grow(0) -->
+        <h1>FLEX GROW</h1>>
+        <div class="d-flex flex-grow">
+            <div class="inner-elem">Elem 1 (grow:1)</div>
+            <div class="inner-elem">Elem 2 (grow:3)</div>
+            <div class="inner-elem">Elem 3 (grow:1)</div>
+            <div class="inner-elem">Elem 4 (grow:1)</div>
+        </div>
+        <br><br><hr><br>
+
+        
+        <!-- Flex Shrink(1) -->
+        <h1>FLEX SHRINK</h1>>
+        <div class="d-flex flex-shrink">
+            <div class="inner-elem">1</div>
+            <div class="inner-elem">3 (shrink more)</div>
+            <div class="inner-elem">1</div>
+            <div class="inner-elem">1</div>
+        </div>
+        <br><br><hr><br>
+
+
+        <!-- Flex Basis(auto) -->
+        <h1>FLEX BASIS</h1>>
+        <div class="d-flex flex-basis">
+            <div class="inner-elem">50px</div>
+            <div class="inner-elem">50px</div>
+            <div class="inner-elem">100px (no effect)</div>
+            <div class="inner-elem">50px</div>
+        </div>
+        <br><br><hr><br>
+    </body>
+</html>

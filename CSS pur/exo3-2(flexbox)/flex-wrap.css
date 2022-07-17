@@ -1,0 +1,44 @@
+* {
+    margin:0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    background-color: #7f8c8d;
+}
+h2 {
+    color: rgb(51, 50, 50);
+}
+
+/* ----------------------------- */
+.d-flex {
+    display: flex;
+    margin: 20px;
+    background-color: #b9babb;
+    border: 1px solid tomato;
+    color: yellow;
+}
+.inner-elem {
+    border: 1px solid #c0392b;
+    height: 100px;
+    padding: 15px;
+    background-color: #34495e;
+}
+
+/* ----------------------------- */
+/* la propriété "flex" répartit l'espace du parent */
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+.flex-wrap-wrap .inner-elem {
+    width: 45%;
+    font-size: 30px;
+}
+.flex-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+.flex-wrap-wrap-reverse .inner-elem {
+    width: 45%;
+    font-size: 30px;
+}
+
