@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.rotate,
+.skew {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+}
+
+.rotate {
+    transform: rotate(20deg);
+}
+.skew {
+    transform: skew(20deg);
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+.img-container div.polaroid {
+    width: 190px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+div.rotate_right {
+    transform: rotate(7deg);
+}
+div.rotate_left {
+    transform: rotate(-7deg);
+}
