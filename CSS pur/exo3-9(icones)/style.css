@@ -1,5 +1,126 @@
-* {
+/* * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
+} */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.d-flex {
+    display: flex;
+}
+
+/* --------------------------------- */
+/* FONT AWESOME */
+.icon-container {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 40px;
+}
+.font .icon-container:nth-of-type(1) {
+    background-color: #1abc9c;
+}
+.font .icon-container:nth-of-type(2) {
+    background-color: #2ecc71;
+}
+.font .icon-container:nth-of-type(3) {
+    background-color: #3498db;
+}
+.font .icon-container:nth-of-type(4) {
+    background-color: #9b59b6;
+}
+
+
+
+/* --------------------------------- */
+/* SVG */
+.svg .icon-container svg {
+    width: 40px;
+    height: 40px;
+}
+.svg .icon-container:nth-of-type(1) {
+    background-color: #f1c40f;
+    fill: white;
+}
+.svg .icon-container:nth-of-type(2) {
+    background-color: #f39c12;
+    fill: white;
+}
+.svg .icon-container:nth-of-type(3) {
+    background-color: #e67e22;
+    fill: white;
+}
+.svg .icon-container:nth-of-type(4) {
+    background-color: #d35400;
+    fill: white;
+}
+.svg .icon-container:nth-of-type(5) {
+    background-color: #e74c3c;
+    fill: white;
+}
+.svg .icon-container:nth-of-type(6) {
+    background-color: #c0392b;
+    fill: white;
+}
+i, svg {
+    transition: transform 1s ease-in-out;
+}
+i:hover, svg:hover {
+    transform: rotate(360deg);
+}
+
+/* -------------------------------------------- */
+/* exemple où j'utilise SVG LOCAL */
+.email {
+    background: url("img/email.svg") no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 30px;
+    width: 30px;
+}
+.faq {
+    background: url("img/faq.svg") no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 30px;
+    width: 30px;
+}
+.fb {
+    background: url("img/fb.svg") no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 30px;
+    width: 30px;
+}
+.li {
+    background: url("img/li.svg") no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 30px;
+    width: 30px;
+}
+.phone{
+    background: url("img/phone.svg") no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 30px;
+    width: 30px;
+}
+.youtube {
+    background: url("img/youtube.svg") no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 30px;
+    width: 30px;
 }

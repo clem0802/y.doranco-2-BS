@@ -1,0 +1,30 @@
+/* * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* VERSION MANUELLE */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.text-with-gradient {
+    /*  https://FLATUICOLORS.com/palette/defo  */
+    background: linear-gradient(90deg, #3498db, #2980b9 45%, #9b59b6 50%, #8e44ad 75%);
+
+    font-size: 40px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+
+    /* check out BACKGROUND-CLIP on "caniuse.com */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    color: transparent;
+
+}
